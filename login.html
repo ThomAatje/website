@@ -3,14 +3,21 @@
 	<head>
 		<meta http-equiv="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		<link rel="stylesheet" type="text/css" href="source/login.css" />
+		<link rel="stylesheet" type="text/css" href="source/css/global.css" />
+		<link rel="stylesheet" type="text/css" href="source/css/login.css" />
 		<title>Login</title>
 	</head>
 	<body>
-		<form>
-			<input type="text" name="username" />
-			<input type="password" name="password" />
-			<input type="submit" value="Login" />
+		<div id="bg-cover"></div>
+		<form method="POST" action="login.php">
+			<div id="positioner">
+				<div id="header">Welkom</div>
+				<input type="text" name="username" placeholder="Gebruikersnaam" />
+				<br />
+				<input type="password" name="password" placeholder="Wachtwoord" />
+				<br />
+				<input type="submit" value="Aanmelden" />
+			</div>
 		</form>
 	</body>
 </html>
